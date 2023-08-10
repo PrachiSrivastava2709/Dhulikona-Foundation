@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <form action="./signup_page.php" method="post">
+        <div class="category">
+            <!-- Label's "for" is associated with radio's "id" -->
+            <input type="radio" name="category" id="user" value="user">
+            <label for="user">User</label> 
+            <br>
+            <input type="radio" name="category" id="pump-op" value="pump-op">
+            <label for="pump-op">Pump Operator</label>
+            <br>
+            <input type="radio" name="category" id="gram-head" value="gram-head">
+            <label for="gram-head">Gram Panchayat Head</label>
+        </div>
+
+        <div class="name">
+            Enter Name:
+            <input type="text" name="Name" id="name">
+        </div>
+
+        <div class="contact">
+            Contact No.: 
+            <input type="number" name="Contact" id="contact">
+        </div>
+        
+        <div class="passwd">
+            Set Password:
+            <input type="password" name="Passwd" id="passwd">
+            <br>
+            Re Enter Password:
+            <input type="password" name="re-passwd" id="passwd">
+        </div>
+
+        <div class="aadhar">
+            Enter Aadhar Number:
+            <input type="number" name="Aadhar" id="aadhar">
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Sign Up">
+            <!-- If you click the "Submit" button, the form-data will be sent to a page called "/signup_page.php". -->
+        </div>
+    </form>
+</body>
+</html>
